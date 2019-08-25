@@ -1,0 +1,18 @@
+[package]
+name = "qkernel"
+version = "0.1.0"
+authors = ["Yulin Sun <sunyulin728@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+rusty-asm = "0.2.1"
+x86_64 = "0.7.4"
+linked_list_allocator = "0.6.4"
+spin = "0.5.0"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

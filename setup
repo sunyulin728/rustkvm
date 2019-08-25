@@ -1,0 +1,8 @@
+rm /home/brad/rust/rustkvm/qkernel/src/qlib
+rm /home/brad/rust/rustkvm/qvisor/src/kvmlib/qlib
+
+ln -s /home/brad/rust/rustkvm/qlib/ /home/brad/rust/rustkvm/qkernel/src/qlib
+ln -s /home/brad/rust/rustkvm/qlib/ /home/brad/rust/rustkvm/qvisor/src/kvmlib/qlib
+
+echo 1000 > /proc/sys/vm/nr_hugepages
+
