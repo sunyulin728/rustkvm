@@ -51,6 +51,7 @@ pub extern fn rust_main() {
         println!("in kernel {}", i);
     }
 
+    //enable to repro the exception issue
     //x86_64::instructions::interrupts::int3();
 
     println!("in kernel end....");
